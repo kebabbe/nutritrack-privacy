@@ -19,32 +19,68 @@
 </head>
 <body>
 <h1>Integritetspolicy — Repava</h1>
-<p class="updated">Uppdaterad 6 juli 2026</p>
+<p class="updated">Uppdaterad 8 november 2026</p>
 
 <div class="short">
-<p>Repava samlar inte in någon data om dig. Allt du loggar — mat, träning, vikt, sömn, recept — lagras enbart lokalt på din iPhone. Appen har inga konton, ingen analys/spårning, inga annonser och inga tredjeparts-SDK:er.</p>
+<p>Det du loggar i Repava — mat, träning, vikt, sömn, recept och bilder — sparas på din iPhone. Hälsodata från Apple Hälsa lämnar aldrig enheten. Data skickas bara vidare när en funktion kräver det: livsmedelssök, receptimport och delning via iCloud, och — om du säger ja — användningsstatistik, AI-tolkning av recept och AI-igenkänning av foton. Appen har inga konton, inga annonser och ingen spårning mellan appar.</p>
 </div>
 
-<h2>Data som lagras på din enhet</h2>
-<p>Din profil (mål, kroppsmått, tränings- och kostpreferenser), matdagbok, träningspass, recept, foton du lägger till recept samt sömndata läses/lagras i appens lokala databas på enheten. Raderar du appen raderas allt — vi har ingen kopia.</p>
+<h2>Personuppgiftsansvarig</h2>
+<p>Albert Olsson ansvarar för behandlingen av personuppgifter i Repava. Kontakt: <a href="mailto:albert.kalvsund@hotmail.com">albert.kalvsund@hotmail.com</a>.</p>
+
+<h2>Data som stannar på din enhet</h2>
+<p>Din profil (namn, kön, födelsedatum, längd, vikt, kroppsfett, mål, aktivitetsnivå, kost, allergier och träningsinställningar), matdagbok, vatten, vikt och kroppsmått, träningspass, recept, veckomenyer, inköpslistor, hushållsmedlemmar och progressbilder sparas i appens lokala databas. Vi har ingen kopia.</p>
 
 <h2>Apple Hälsa</h2>
-<p>Med ditt uttryckliga tillstånd läser appen träningspass och sömn från Apple Hälsa för att visa dem i appen. Hälsodatan lämnar aldrig din enhet och används aldrig för marknadsföring eller delning med tredje part.</p>
+<p>Med ditt tillstånd läser Repava träningspass, aktiv energi, sömn, puls, vilopuls, pulsvariabilitet (HRV), andningsfrekvens och handledstemperatur under sömn från Apple Hälsa, för att logga dina pass, räkna in förbränningen i kalorimålet, visa pulsen under vilan mellan set och visa sömn och återhämtning. Repava på Apple Watch läser puls och förbrända kalorier under passet och sparar passen du kör där i Apple Hälsa. Hälsodatan stannar på enheten: den skickas aldrig till oss, till statistik eller till AI, lagras aldrig i iCloud och används aldrig för marknadsföring. Du ändrar åtkomsten i iPhones Inställningar → Hälsa.</p>
 
-<h2>Internetanrop</h2>
-<p>När du söker efter livsmedel skickas själva sökordet till två öppna livsmedelsdatabaser (Open Food Facts, USDA FoodData Central) för att hämta näringsvärden; Livsmedelsverkets databas är inbyggd i appen och söks lokalt. Sökningarna innehåller ingen identitet och kopplas inte till dig. Importerar du ett recept hämtar appen den webbsida du själv anger.</p>
+<h2>Användningsstatistik (valfritt)</h2>
+<p>Säger du ja sparar Repava användningsstatistik i appens egen databas i iCloud hos Apple: vilka skärmar som visas och hur länge, vilka knappar som trycks, ungefär var på skärmen du trycker (aldrig vad som står där), när appen öppnas och stängs, ditt kön och din åldersgrupp (till exempel 25–34, aldrig födelsedatum), om du har Repava+, appversion, iOS-version, språk, telefonmodell, skärmstorlek och ett slumpmässigt ID som gör att statistiken från samma telefon kan följas över tid. iCloud lägger också till ett ID för ditt konto som bara gäller Repava. Inget av dem avslöjar vem du är. Statistiken innehåller aldrig hälsodata, ditt namn eller det du loggar, och skärmen spelas aldrig in. Du kan ändra dig när som helst under Profil → Inställningar → Integritet.</p>
+
+<h2>AI-tolkning av recept (valfritt)</h2>
+<p>När du importerar ett recept kan Repava låta Claude, en AI-tjänst från Anthropic, läsa ut ingredienser, mängder och steg och översätta receptet. Det sker bara om du har sagt ja. Då skickas länken, receptets text från sidan, text du klistrat in eller text som lästs ur dina skärmdumpar på telefonen — aldrig bilder, din profil eller hälsodata. Texten går via Repavas server hos Cloudflare, som inte sparar innehållet men håller ett slumpmässigt installations-ID i högst en timme för att begränsa missbruk. Anthropic använder inte datan för att träna sina modeller och raderar den efter en begränsad tid enligt sina villkor. Säger du nej tolkas recept med enklare regler direkt på telefonen.</p>
+
+<h2>AI-igenkänning av foton (valfritt)</h2>
+<p>Under Hemma kan du fota eller välja en bild på maten du har hemma, så föreslår Repava vad du kan äta. Det sker bara om du har sagt ja till AI-igenkänning av foton. Då skickas bilden — förminskad och utan platsinformation — till Claude från Anthropic, som läser ut vilka livsmedel som syns, och du godkänner det som hittas innan något läggs till. Bilden går via Repavas server hos Cloudflare, som inte sparar den. För att begränsa antalet bilder räknar servern dygnets bilder per slumpmässigt installations-ID och per IP-adress i hashad form (aldrig själva adressen); räknarna raderas efter ett dygn. Anthropic använder inte bilderna för att träna sina modeller och raderar dem efter en begränsad tid enligt sina villkor. Fota inte personer eller annat du inte vill dela. Du kan ändra dig när som helst under Profil → Inställningar → Integritet.</p>
+
+<h2>Livsmedelssök och receptimport</h2>
+<p>När du söker efter livsmedel eller skannar en streckkod skickas sökordet eller streckkoden till Open Food Facts och USDA FoodData Central. Livsmedelsverkets databas finns i appen och söks lokalt. Importerar du ett recept hämtar appen den webbsida, eller den Instagram- eller TikTok-länk, du själv anger. Som vid all internettrafik ser tjänsterna din IP-adress.</p>
+
+<h2>Delning via iCloud</h2>
+<p>Delar du recept, veckomenyer, inköpslistor eller hushållsmedlemmar (namn och ålder) lagras de i ditt eget iCloud-konto och delas med dem du bjuder in. Vi har ingen åtkomst till din privata iCloud-data. Föreslår du en portion, ett näringsvärde eller ett saknat livsmedel sparas förslaget (livsmedlets namn, streckkod, mängd och din kommentar) i appens publika iCloud-databas, där vi granskar det. Förslaget innehåller inte ditt namn.</p>
 
 <h2>Röstloggning</h2>
-<p>Pratar du in mat används Apples taligenkänning. På enheter som stödjer det sker igenkänningen helt på din enhet; annars behandlas ljudet av Apple enligt deras villkor. Appen sparar aldrig ljudinspelningar — bara texten du godkänner loggas.</p>
+<p>Pratar du in mat används Apples taligenkänning. På enheter som stödjer det sker igenkänningen helt på telefonen; annars behandlas ljudet av Apple enligt Apples villkor. Repava sparar aldrig ljudinspelningar — bara texten du godkänner loggas.</p>
+
+<h2>Restauranger och plats</h2>
+<p>Tillåter du det använder restaurangkartan din plats för att visa restauranger nära dig. Platsen används bara medan kartan är öppen och sparas inte. För att hitta restauranger skickas kartans område till Apple (Apple Kartor och iCloud), aldrig till oss. Menyer, näringsvärden och allergener kommer från restaurangerna själva eller från kedjornas egen näringsinformation.</p>
+
+<h2>Notiser</h2>
+<p>Påminnelser skapas och schemaläggs på telefonen. Nyheter från Repava skickas via Apple: telefonen sparar en prenumeration i appens publika iCloud-databas, kopplad till ett ID för ditt iCloud-konto som bara gäller Repava, och Apple levererar notisen. Den innehåller inga uppgifter om dig. Stäng av den under Profil → Inställningar → Påminnelser → Nyheter från Repava.</p>
 
 <h2>Köp</h2>
-<p>Köp av Repava+ hanteras helt av Apples App Store. Vi ser eller lagrar aldrig betaluppgifter.</p>
+<p>Köp av Repava+ hanteras av Apple. Vi ser eller lagrar aldrig betaluppgifter.</p>
+
+<h2>Tredje parter</h2>
+<p>Data delas bara med tjänsterna som nämns ovan (Anthropic, Cloudflare, Open Food Facts, USDA och Apple) och bara för att funktionen ska fungera. Vi säljer aldrig data och använder den inte för reklam. De tjänster som tar emot personuppgifter från Repava ger samma eller likvärdigt skydd för dem som beskrivs i den här policyn.</p>
+
+<h2>Rättslig grund</h2>
+<p>Användningsstatistik, AI-tolkning av recept och AI-igenkänning av foton bygger på ditt samtycke, och hälsodata på ditt uttryckliga samtycke (GDPR artikel 6.1 a och 9.2 a). Övrig behandling behövs för att leverera appens funktioner till dig (artikel 6.1 b). Du kan återkalla ett samtycke när som helst i appen.</p>
+
+<h2>Lagring och radering</h2>
+<p>Data på enheten finns kvar tills du raderar den. Under Profil → Inställningar → Radera all data tar du bort allt Repava sparat på telefonen; att radera appen gör detsamma. Användningsstatistik sparas i högst ett år. Radera all data tar också bort statistiken som telefonen har skickat. Vill du att vi raderar förslag du skickat in, mejla <a href="mailto:albert.kalvsund@hotmail.com">albert.kalvsund@hotmail.com</a>.</p>
+
+<h2>Dina rättigheter</h2>
+<p>Du har rätt att få veta vilka uppgifter vi har om dig, att få dem rättade eller raderade och att invända mot eller begränsa behandlingen. Kontakta oss på <a href="mailto:albert.kalvsund@hotmail.com">albert.kalvsund@hotmail.com</a>. Du kan också klaga hos Integritetsskyddsmyndigheten (IMY), imy.se.</p>
+
+<h2>Barn</h2>
+<p>Repava är inte avsett för barn under 13 år. Är du under 18 år, prata med en vuxen eller med vården innan du försöker ändra din vikt.</p>
 
 <h2>Ändringar</h2>
-<p>Om policyn ändras uppdateras denna sida och datumet ovan.</p>
+<p>Ändras policyn uppdaterar vi den här texten och datumet.</p>
 
 <h2>Kontakt</h2>
-<p>Frågor om integritet? Mejla <a href="mailto:4sy52hgbzt@privaterelay.appleid.com">4sy52hgbzt@privaterelay.appleid.com</a>.</p>
+<p>Frågor om integritet? Mejla <a href="mailto:albert.kalvsund@hotmail.com">albert.kalvsund@hotmail.com</a>.</p>
 
 <footer><a href="en.html">In English</a></footer>
 </body>
